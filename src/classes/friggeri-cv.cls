@@ -76,6 +76,9 @@
 %%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
+%----------------------------NOTE----------------------------
+% Realative address for fonts is based on main.tex directory path
+%------------------------------------------------------------
 
 \newfontfamily\bodyfont
 [
