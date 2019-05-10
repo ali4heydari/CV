@@ -1,0 +1,111 @@
+%!TEX TS-program = xelatex
+%!TEX options = -synctex=1 -interaction=nonstopmode -output-directory=../build/ "%DOC%"
+%!TEX encoding = UTF-8 Unicode
+
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{./classes/awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+%\fontdir{../assets/fonts/} % this command does not working! I changed default value in newcommad definition of this command in awesome-cv.cls 
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo{../assets/images/ali-heydari.jpg}
+\name{Ali}{Heydari}
+\position{Computer Engenieering Student}%{\enskip\cdotp\enskip}Security Expert}
+\address{Iran, Tehran, Narmak, Iran University of Science and Technology.}
+
+\mobile{\href{tel:+989368563509}{(+98) 936-856-3509}}
+\email{ali4heydari@gmail.com}
+%\homepage{www.posquit0.com}
+\github{ali4heydari}
+\linkedin{ali4heydari}
+\gitlab{ali4heyari}
+\stackoverflow{8777320/ali4heydari}{ali4heydari}
+%\twitter{ali4heydari}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Ali Heydari}%~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{sections/education.tex}
+\input{sections/honors.tex}
+\input{sections/technical-skills.tex}
+\input{sections/experience.tex}
+\input{sections/research-interests.tex}
+\input{sections/personal-traits.tex}
+\input{sections/course-highlights.tex}
+% \input{sections/committees.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
